@@ -1,8 +1,6 @@
-* {
-    border: 1px dashed;
-    border-color: blueviolet;
-}
+
 html{
+    padding: 10px 150px;
     background-color: rgb(31, 30, 30);
 }
 
