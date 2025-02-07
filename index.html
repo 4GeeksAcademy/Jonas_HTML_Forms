@@ -36,6 +36,7 @@
               inputmode="numeric"
               maxlength="16" 
               placeholder="XXXX-XXXX-XXXX-XXXX"
+              required
               >
             </div>
             
@@ -49,7 +50,9 @@
               pattern="[0-9]{3}"
               inputmode="numeric"
               maxlength="3" 
-              placeholder="XXX">
+              placeholder="XXX"
+              required
+              >
             </div>
             
             <!-- Amount -->
@@ -60,9 +63,12 @@
               class="form-control" 
               id="amount"
               pattern="[0-9]{10}"
-              inputmode="numeric"
-              placeholder="€">
+              inputmode="numeric" 
+              placeholder="€"
+              required
+              >
             </div>
+            <!-- number / no numeric -->
           </div>
       </div>
     <!-- Datos del usuario -->
@@ -71,27 +77,27 @@
       <!-- Bloque Left -->
        <div class="col-md-6">
         <label for="firsName" class="form-label">First Name</label>
-        <input type="text" class="form-control" id="fisrtName" placeholder="Your name here">
+        <input type="text" class="form-control" id="fisrtName" placeholder="Your name here" required>
 
         <label for="city" class="form-label mt-3">City</label>
-        <input type="text" class="form-control" id="city" placeholder="Your city here">
+        <input type="text" class="form-control" id="city" placeholder="Your city here" required>
 
         <div class="col-md-6 mt-3">We accept
          <div class="bg-secondary p-1 mt-2 d-flex flex-wrap gap-4 align-items-center rounded">
             <div class="d-flex align-items-center gap-1">
-              <input type="radio" name="payment">
+              <input type="radio" name="payment" required>
               <i class="fa-brands fa-cc-mastercard fs-6" style="color:white"></i>
             </div>
             <div class="d-flex align-items-center gap-1">
-              <input type="radio" name="payment">
+              <input type="radio" name="payment" required>
               <i class="fa-brands fa-cc-visa fs-6" style="color:white"></i>
             </div>
             <div class="d-flex align-items-center gap-1">
-              <input type="radio" name="payment">
+              <input type="radio" name="payment" required>
               <i class="fa-brands fa-cc-paypal fs-6" style="color:white"></i>
             </div>
             <div class="d-flex align-items-center gap-1">
-              <input type="radio" name="payment">
+              <input type="radio" name="payment" required>
               <i class="fa-regular fa-credit-card fs-6" style="color:white"></i>
             </div>
           </div>
@@ -101,13 +107,13 @@
       <!-- Bloque Right -->
        <div class="col-md-6">
         <label for="lastName" class="form-label" >Last Name</label>
-        <input type="text" class="form-control" id="lastName" placeholder="Your last name here">
+        <input type="text" class="form-control" id="lastName" placeholder="Your last name here" required>
 
         <div class="row">
           <div class="col-md-6">
             <label for="state" class="form-label mt-3">State</label>
-            <select name="state" id="state" class="form-select fw-light" placeholder="Pick a state">
-              <option selected disabled class="fw-light">Pick a state</option>
+            <select name="state" id="state" class="form-select fw-light" placeholder="Pick a state" required>
+              <option value="" selected disabled class="fw-light">Pick a state</option>
               <option value="France">France</option>
               <option value="Spain">Spain</option>
               <option value="Portugal">Portugal</option>
@@ -117,7 +123,7 @@
           </div>   
           <div class="col-md-6">
             <label for="postalCode" class="form-label mt-3">Postal Code</label>
-            <input type="text" class="form-control" id="postalCode" placeholder="Your postal code here">
+            <input type="text" class="form-control" id="postalCode" placeholder="Your postal code here" required>
           </div>  
          </div>
          <div class="col-md-12">
